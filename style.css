@@ -85,8 +85,11 @@ h3 {
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-white);
   margin: 4px 0;
+}
+span {
+  color: var(--color-white);
 }
 
 /* Nvvbar */
@@ -148,6 +151,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.sction__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -214,4 +221,52 @@ p {
 }
 .etc__summary {
   font-size: var(--font-micro);
+}
+
+#todaybest {
+  background-color: var(--color-light-grey);
+}
+
+.ranking {
+  display: flex;
+  margin: 20px 0;
+}
+.ranking__left {
+  flex-basis: 60%;
+  background-color: var(--color-black);
+  padding: 20px 40px;
+}
+
+.visit_list {
+  display: flex;
+  justify-content: space-between;
+}
+.visit {
+  margin-bottom: 32px;
+}
+.visit__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-gray);
+}
+.skill__value {
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+}
+
+.ranking__right {
+  flex-basis: 40%;
+}
+
+.writer {
+  background-color: #212121;
+}
+.platform {
+  background-color: #484848;
+}
+
+.writer,
+.platform {
+  padding: 30px;
 }
