@@ -359,3 +359,37 @@ span {
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
+
+#genres {
+  background-color: var(--color-light-grey);
+}
+.platforms {
+  margin: 40px;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+}
+.platform__avatar {
+  width: 180px;
+  height: 70px;
+  /* border-radius: 80%; */
+}
+.platform__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+.platform__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+.platform__speech-bubble {
+  padding: 18px;
+  border-radius: var(--size-border-radius);
+  border: 1px solid var(--color-light-white);
+}
+
+.platform__speech-bubble a {
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+}
