@@ -120,6 +120,16 @@ span {
   background-color: var(--color-dark-grey);
 }
 
+.navbar__toggle-btn {
+  border: 1px solid pink;
+  position: absolute;
+  top: 78px;
+  right: 32px;
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
 /* HOME */
 #home {
   background: var(--color-black);
@@ -257,18 +267,23 @@ span {
 
 .ranking__right {
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .writer {
   background-color: #212121;
+  flex-basis: 60%;
 }
-.platform {
+.b-platform {
   background-color: #484848;
+  flex-basis: 40%;
 }
 
 .writer,
-.platform {
-  padding: 30px;
+.b-platform {
+  padding: 20px;
 }
 
 /* Mybest */
@@ -396,4 +411,35 @@ span {
 
 #contact {
   background-color: var(--color-black);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .best__novels {
+    flex-direction: column;
+  }
+  .novel {
+    margin: 30px;
+  }
+  .ranking {
+    flex-direction: column;
+  }
+  .list {
+    flex-grow: 1;
+  }
 }
