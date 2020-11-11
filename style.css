@@ -393,3 +393,7 @@ span {
   color: rgb(44, 44, 44);
   font-weight: bold;
 }
+
+#contact {
+  background-color: var(--color-black);
+}
