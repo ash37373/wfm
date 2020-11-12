@@ -94,12 +94,26 @@ span {
 
 /* Nvvbar */
 #navbar {
+  position: fixed;
+  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-black);
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
 }
+#navbar img {
+  transform: scale(0.5);
+}
+
+/* navbar이면서 navbar--dark일때 */
+#navbar.navbar--dark {
+  background-color: brown;
+  padding: 8px;
+}
+
 .navbar__menu {
   display: flex;
 }
@@ -134,6 +148,7 @@ span {
 #home {
   background: var(--color-black);
   padding: 40px;
+  padding-top: 150px;
   text-align: center;
 }
 .home__profile {
